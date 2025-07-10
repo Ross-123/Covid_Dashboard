@@ -115,4 +115,4 @@ with gr.Blocks() as country_time_series_tab:
               outputs=plt_doses)
 
 demo = gr.TabbedInterface([global_map_tab, country_time_series_tab], ["Global Map", "Country Time Series"])
-demo.launch()
+demo.launch()(share=True)  # Share your demo with just 1 extra parameter
